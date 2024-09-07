@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="https://www.olgunkarabulut.com">
     <title>Yönsis | Bilgisayar Sistemleri San. ve Tic. A.Ş</title>
-  
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/font/stylesheet.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/swiper/css/swiper-bundle.min.css">
+
 </head>
 <body>
 <section class="header">
   <img src="assets/images/88denberi.png" width="120" height="21" class="denberi" alt="">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg d-xl-flex d-none">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="assets/images/yonsis-logo.png" width="160" height="52" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,8 +59,14 @@
           <a class="navbar-brand" href="#"><img src="assets/images/yonsis_siber.png" width="155" height="44" alt=""></a>
         </div>
       </nav>
+      <div class="mobil_menu d-xl-none d-flex">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand" href="#"><img src="assets/images/yonsis-logo.png" width="160" height="52" alt=""></a>
+          <a class="menuOpen"><img src="assets/images/yonsis-logo.png" width="160" height="52" alt=""></a>
+        </div>
+      </div>
 </section>
-    <section class="slider">
+    <section class="slider d-none">
         <div class="swiper sliderYon">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -69,14 +78,31 @@
                   <p class="text">Siber güvenlik danışmanları, kurumların mevcut güvenlik durumlarını değerlendirerek, eksiklikleri belirler ve bu eksiklikleri gidermek için özel çözümler sunar.</p>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="bg_resim_area">
+                  <img src="assets/images/slider_1.png" width="1920" height="850" />
+                </div>
+                <div class="text_area">
+                  <h2 class="slider_title">siber güvenlik <span>danışmanlığı</span></h2>
+                  <p class="text">Siber güvenlik danışmanları, kurumların mevcut güvenlik durumlarını değerlendirerek, eksiklikleri belirler ve bu eksiklikleri gidermek için özel çözümler sunar.</p>
+                </div>
+              </div>
   
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="container">
+              <div class="radiostiona">
+                <div class="swiper-button-next">
+                  <img src="assets/images/arrow_circle.png" alt="">
+                </div>
+                <div class="swiper-button-prev">
+                  <img src="assets/images/arrow_circle.png" alt="">
+                </div>
+              </div>
+            </div>
             <div class="swiper-pagination"></div>
           </div>
     </section>
-    <section class="about-us">
+    <section class="about-us d-none">
       <div class="bg_img">
         <img src="assets/images/about_bg.png" width="1470" height="460" alt="">
       </div>
@@ -86,7 +112,48 @@
           Network, Baskı ve Tarama gibi bir çok alanda hizmet vermektedir.</p>
       </div>
     </section>
-    <section class="guvenilir mt-4">
+    <div class="cozumlerimiz mt-5 d-none">
+      <div class="container">
+        <div class="title_sper">
+          <div class="backTitle">Çözümlerimiz</div>
+          <h2 class="h2">Çözümlerimiz</h2> 
+        </div>
+        <div class="row">
+          <div class="col-xl-4 cozum_1">
+            <div class="cozum_daire">
+              <img src="assets/images/daire.png" class="cd" width="544" height="544" alt="">
+              <div class="content_a">
+                <img src="assets/images/solutions_yonsis_siber.png" class="logo" width="334" height="94" alt="">
+                <p class="text">Yönsis Siber ile verileriniz güvende, işiniz
+                  kesintisiz devam ediyor. Kişiye özel güvenlik çözümlerimizle, kurumunuzun büyümesine destek oluyoruz.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 cozum_2">
+            <img src="assets/images/daire.png" class="cozum_daire" width="544" height="544" alt="">
+            <div class="content_a">
+              <img src="assets/images/adobe.png" class="logo" width="177" height="42" alt="">
+              <p class="text">ve diğer yazılımlar</p>
+            </div>
+          </div>
+          <div class="col-xl-3 cozum_2 cozum_3">
+            <div class="cozum_daire">
+              <img src="assets/images/daire.png" class="cd" width="544" height="544" alt="">
+              <div class="content_a">
+                <img src="assets/images/dmo-logo-yazisiz.png" class="logo" width="87" height="86" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 cozum_2 spccc">
+            <img src="assets/images/daire.png" class="cozum_daire" width="544" height="544" alt="">
+            <div class="content_a">
+              <img src="assets/images/pc-storage-server.png" class="logo" width="164" height="40" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="guvenilir d-none">
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-xl-8 liste_area">
@@ -125,6 +192,270 @@
             <div class="resim_area">
               <img src="assets/images/adam.png" width="570" height="460" alt="">
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider_haberler mt-5 d-none">
+        <div class="container">
+          <div class="radiostiona">
+            <div class="swiper-button-next">
+              <img src="assets/images/arrow_circle_black.png" alt="">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="assets/images/arrow_circle_black.png" alt="">
+            </div>
+          </div>
+          <div class="title_sper">
+            <div class="backTitle">Haberler</div>
+            <h2 class="h2">Bizden Haberler</h2> 
+          </div>
+          <div class="swiper haberler_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_1.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_2.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_3.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_4.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_5.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_1.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_2.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_3.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_4.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="linkkk">
+                <div class="bg_img">
+                  <img src="assets/images/haber_slider_5.png" width="345" height="480" alt="">
+                </div>
+                <div class="text">
+                  <h3>Yönsis İle Alakalı Haber Başlığı Alanı Buraya Gelecek</h3>
+                  <p>Yönsis’in bu derece güvenilir bir şirket olmasının temelinde;</p>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>   
+        </div>
+    </section>
+    <div class="slider_markalar pt-5 d-none">
+      <div class="container my-5">
+        <div class="swiper markalar_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/kck_adobe.png" width="76" height="32" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/kck_adventech.png" width="95" height="23" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/kck_epson.png" width="78" height="25" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/kck_kodak-alaris.png" width="95" height="17" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/kck_logitech.png" width="34" height="45" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/kck_snc.png" width="60" height="25" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/kck_supermicro.png" width="67" height="36" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/kck_xerox.png" width="102" height="29" alt="">
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+    <section class="footer pt-5 pb-4 mt-5 d-none">
+      <div class="container ">
+        <div class="row">
+          <div class="col-xl-3">
+            <div class="logo">
+              <a href="#">
+                <img src="assets/images/yonsis_white_logo.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-6 d-flex justify-content-center">
+            <form action="">
+              <input type="text" placeholder="Bültenimize E-posta Adresinizle Kayıt Olun" class="ebultennn" name="ebulten">
+              <button type="submit">></button>
+            </form>
+          </div>
+          <div class="col-xl-3 socilaArea">
+            <ul class="social_m">
+              <li>
+                <a href="#">
+                  <img src="assets/images/in.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/wp.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/yt.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/facebook.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/X.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2 menu_areas mt-5">
+            <ul>
+              <li><a href="#" title="Anasayfa">Anasayfa</a></li>
+              <li><a href="#" title="Kurumsal">Kurumsal</a></li>
+              <li><a href="#" title="Haberler">Haberler</a></li>
+              <li><a href="#" title="Sertifikalar">Sertifikalar</a></li>
+              <li><a href="#" title="İletişim">İletişim</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 menu_areas mt-5">
+            <ul>
+              <li><a href="#" title="Yönsis Siber">Yönsis Siber</a></li>
+              <li><a href="#" title="Adobe Yazılımları">Adobe Yazılımları</a></li>
+              <li><a href="#" title="Devlet Malzeme Ofisi">Devlet Malzeme Ofisi</a></li>
+              <li><a href="#" title="Server Storage">Server Storage</a></li>
+              <li><a href="#" title="PC - Notebook">PC - Notebook</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 menu_areas mt-5">
+            <ul>
+              <li><a href="#" title="Adobe">Adobe</a></li>
+              <li><a href="#" title="Adantech">Adantech</a></li>
+              <li><a href="#" title="Epson">Epson</a></li>
+              <li><a href="#" title="Kodak Alaris">Kodak Alaris</a></li>
+              <li><a href="#" title="Logitech">Logitech</a></li>
+              <li><a href="#" title="SNC">SNC</a></li>
+              <li><a href="#" title="SuperMicro">SuperMicro</a></li>
+              <li><a href="#" title="Xerox">Xerox</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-5 menu_areas mt-5">
+            <ul>
+              <li><b>Adres:</b><a href="#" title="Kozyatağı Mah. Değirmen Sok. Ar Plaza A Blok No: 16/12 Kadıköy - İstanbul">Kozyatağı Mah. Değirmen Sok. Ar Plaza A Blok No: 16/12 Kadıköy - İstanbul</a></li>
+              <li><b>Telefon:</b><a href="#" title="+90 (216) 470 62 00">+90 (216) 470 62 00</a></li>
+              <li><b>Fax:</b><a href="#" title="+90 (216) 470 62 24">+90 (216) 470 62 24</a></li>
+              <li><b>Mail:</b><a href="#" title="info@yonsis.com.tr">info@yonsis.com.tr</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bbwhite my-3"></div>
+      </div>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="copirate">Copyright © 2024 YÖNSİS BİLGİSAYAR</div>
+          </div>
+          <div class="col-xl-6 d-flex justify-content-end">
+            <img src="assets/images/webtasarim.png" width="128" height="29" alt="">
           </div>
         </div>
       </div>
