@@ -179,8 +179,10 @@ body {
   height: fit-content;
 }
 .about-us .bg_img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 1470px;
+  width: 100%;
 }
 
 .guvenilir {
@@ -189,6 +191,10 @@ body {
   margin-top: -160px;
   background-color: #e7ebef;
   align-items: end;
+}
+.guvenilir .adam_area .resim_area img {
+  width: 100%;
+  height: auto;
 }
 .guvenilir .liste_area .text_area {
   color: #153b66;
@@ -324,11 +330,15 @@ body {
 }
 
 .slider_haberler {
+  margin-top: 100px;
   max-width: 1920px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+.slider_haberler .title_sper {
+  width: 100% !important;
 }
 .slider_haberler .radiostiona {
   position: absolute;
@@ -515,7 +525,79 @@ body {
     display: none;
   }
 }
+@media only screen and (max-width: 1530px) {
+  .cozumlerimiz .content_a {
+    top: 85px;
+    max-width: 210px;
+    line-height: 1.3;
+  }
+  .cozumlerimiz .spccc .content_a {
+    top: 70px;
+  }
+  .cozumlerimiz .spccc .content_a .logo {
+    max-width: 120px;
+  }
+  .cozumlerimiz .spccc .content_a:after {
+    bottom: -371%;
+    right: -30px;
+  }
+  .cozumlerimiz .content_a .logo {
+    max-width: 190px;
+  }
+  .cozumlerimiz .cozum_1 .content_a:after {
+    bottom: -57%;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .cozumlerimiz .cozum_1 .content_a:after {
+    bottom: -45%;
+  }
+}
 @media only screen and (max-width: 1200px) {
+  .slider_haberler .radiostiona {
+    top: 20px;
+  }
+  .guvenilir {
+    height: 590px;
+  }
+  .title_sper .backTitle {
+    font-size: 45px;
+  }
+  .cozumlerimiz .cozum_1 .cozum_daire {
+    display: flex;
+  }
+  .cozumlerimiz .spccc .content_a {
+    top: 90px;
+  }
+  .cozumlerimiz .cozum_1 .cd {
+    width: 100%;
+    height: auto;
+    position: relative;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slider .sliderYon .swiper-wrapper .swiper-slide .text_area .slider_title {
+    font-size: 70px;
+    max-width: 375px;
+    line-height: 1;
+  }
+  .about-us .bg_img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 200px;
+  }
+  .about-us .text_area {
+    padding-left: 15px;
+    padding-right: 15px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .openMenu .header .mm_menu {
+    right: 0 !important;
+  }
   .header {
     display: flex;
     align-self: center;
@@ -523,5 +605,106 @@ body {
   .header .mobil_menu {
     display: flex;
     align-items: center;
+    width: 100%;
+  }
+  .header .mobil_menu .menuOpen {
+    filter: invert(1);
+    cursor: pointer;
+  }
+  .header .mobil_menu .mm_menu {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    height: 100%;
+    width: 300px;
+    bottom: 0;
+    padding-left: 30px;
+    display: flex;
+    right: -300px;
+    transition: 0.5s all;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header .mobil_menu .mm_menu .menuOpen {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  .header .mobil_menu .mm_menu li {
+    list-style-type: none;
+  }
+  .header .mobil_menu .mm_menu li a {
+    font-size: 20px;
+    color: #153b66;
+    transition: 0.5s all;
+  }
+  .header .mobil_menu .mm_menu li a:hover {
+    color: #c53e42;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .slider_haberler .container {
+    margin-left: 0;
+    padding-left: 0 !important;
+  }
+  .guvenilir {
+    height: auto;
+    padding-top: 200px;
+  }
+  .cozumlerimiz .cozum_1 .cd {
+    width: 320px;
+  }
+  .cozumlerimiz .content_a .text {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slider .sliderYon .swiper-wrapper .swiper-slide .text_area .slider_title {
+    font-size: 40px;
+    max-width: 220px;
+    line-height: 1;
+  }
+  .slider .sliderYon .swiper-wrapper .swiper-slide .text_area .text {
+    font-size: 15px;
+    max-width: 660px;
+  }
+  .slider .sliderYon .swiper-wrapper .swiper-slide .text_area {
+    top: -180px;
+  }
+  .slider .sliderYon .swiper-wrapper .swiper-slide .bg_resim_area img {
+    height: 520px;
+  }
+  .about-us .bg_img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .slider_haberler .haberler_slider .swiper-slide {
+    max-width: 380px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cozumlerimiz .content_a .text {
+    display: none;
+  }
+  .cozumlerimiz .cozum_3 .content_a:after {
+    bottom: -100% !important;
+  }
+  .cozumlerimiz .cozum_1 .cd {
+    bottom: -225%;
+  }
+  .cozumlerimiz .cozum_1 .cd, .cozumlerimiz .cozum_3 .cd {
+    width: 270px;
+  }
+  .cozumlerimiz .cozum_1 .content_a:after {
+    bottom: -235%;
+  }
+  .cozumlerimiz .cozum_2 .content_a:after {
+    bottom: -320%;
+  }
+  .cozumlerimiz .spccc .content_a:after {
+    bottom: -430%;
   }
 }/*# sourceMappingURL=style.css.map */

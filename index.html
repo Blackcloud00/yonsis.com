@@ -60,13 +60,42 @@
         </div>
       </nav>
       <div class="mobil_menu d-xl-none d-flex">
-        <div class="container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between align-items-center">
           <a class="navbar-brand" href="#"><img src="assets/images/yonsis-logo.png" width="160" height="52" alt=""></a>
-          <a class="menuOpen"><img src="assets/images/yonsis-logo.png" width="160" height="52" alt=""></a>
+          <a class="nav-link" style="margin-left: auto; margin-right: 10px;" href="#"><img src="assets/images/search.png" alt=""></a>
+          <a class="nav-link"style="margin-right: 20px;" href="#">EN</a>
+          <a class="menuOpen"><img src="assets/images/menu.png" width="25" height="18" alt=""></a>
+     
+          <ul class="mm_menu">
+            <a class="menuOpen" style="filter: invert(0);"><img src="assets/images/close.png"  width="25" height="25" alt=""></a>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Anasayfa</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Kurumsal
+              </a>
+              <ul class="dropdown">
+                <li><a class="dropdown-item" href="#">Çözümlerimiz</a></li>
+                <li><a class="dropdown-item" href="#">Markalarımız</a></li>
+                <li><a class="dropdown-item" href="#">Kariyer</a></li>
+                <li><a class="dropdown-item" href="#">KVKK</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Haberler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Sertifikalar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">İletişim</a>
+            </li>
+          </ul>
         </div>
       </div>
 </section>
-    <section class="slider d-none">
+    <section class="slider">
         <div class="swiper sliderYon">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -102,7 +131,7 @@
             <div class="swiper-pagination"></div>
           </div>
     </section>
-    <section class="about-us d-none">
+    <section class="about-us">
       <div class="bg_img">
         <img src="assets/images/about_bg.png" width="1470" height="460" alt="">
       </div>
@@ -112,14 +141,14 @@
           Network, Baskı ve Tarama gibi bir çok alanda hizmet vermektedir.</p>
       </div>
     </section>
-    <div class="cozumlerimiz mt-5 d-none">
+    <div class="cozumlerimiz mt-5">
       <div class="container">
         <div class="title_sper">
           <div class="backTitle">Çözümlerimiz</div>
           <h2 class="h2">Çözümlerimiz</h2> 
         </div>
         <div class="row">
-          <div class="col-xl-4 cozum_1">
+          <div class="col-xl-4 col-lg-6 cozum_1">
             <div class="cozum_daire">
               <img src="assets/images/daire.png" class="cd" width="544" height="544" alt="">
               <div class="content_a">
@@ -129,14 +158,14 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 cozum_2">
+          <div class="col-xl-3 col-lg-6 cozum_2">
             <img src="assets/images/daire.png" class="cozum_daire" width="544" height="544" alt="">
             <div class="content_a">
               <img src="assets/images/adobe.png" class="logo" width="177" height="42" alt="">
               <p class="text">ve diğer yazılımlar</p>
             </div>
           </div>
-          <div class="col-xl-3 cozum_2 cozum_3">
+          <div class="col-xl-3 col-lg-6 cozum_2 cozum_3">
             <div class="cozum_daire">
               <img src="assets/images/daire.png" class="cd" width="544" height="544" alt="">
               <div class="content_a">
@@ -144,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-2 cozum_2 spccc">
+          <div class="col-xl-2 col-lg-6 cozum_2 spccc">
             <img src="assets/images/daire.png" class="cozum_daire" width="544" height="544" alt="">
             <div class="content_a">
               <img src="assets/images/pc-storage-server.png" class="logo" width="164" height="40" alt="">
@@ -153,12 +182,12 @@
         </div>
       </div>
     </div>
-    <section class="guvenilir d-none">
+    <section class="guvenilir">
       <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-xl-8 liste_area">
+        <div class="row d-flex align-items-lg-center align-items-end">
+          <div class="col-md-8 liste_area">
             <div class="row">
-              <div class="col-xl-4">
+              <div class="col-lg-4 col-md-6">
                 <div class="resim_area">
                   <img src="assets/images/guvenilir.png" width="68" height="83" alt="">
                 </div>
@@ -168,7 +197,7 @@
                     kurulduğumuz günden beri sahip olduğumuz azim, hizmet aşkı ve kendimize olan inancımız yatıyor.</p>
                 </div>
               </div>
-              <div class="col-xl-4">
+              <div class="col-lg-4 col-md-6">
                 <div class="resim_area">
                   <img src="assets/images/inovatif.png" width="80" height="80" alt="">
                 </div>
@@ -177,7 +206,7 @@
                   <p>Hem bilişim sektöründeki ve hem de diğer alanlardaki tüm gelişmeleri takip ederek entegre projeler ile ihtiyaçlarınıza çözüm buluyoruz.</p>
                 </div>
               </div>
-              <div class="col-xl-4">
+              <div class="col-lg-4 col-md-6">
                 <div class="resim_area">
                   <img src="assets/images/girisimci.png" width="80" height="80" alt="">
                 </div>
@@ -188,7 +217,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 adam_area">
+          <div class="col-md-4 adam_area">
             <div class="resim_area">
               <img src="assets/images/adam.png" width="570" height="460" alt="">
             </div>
@@ -196,7 +225,7 @@
         </div>
       </div>
     </section>
-    <section class="slider_haberler mt-5 d-none">
+    <section class="slider_haberler">
         <div class="container">
           <div class="radiostiona">
             <div class="swiper-button-next">
@@ -326,7 +355,7 @@
           </div>   
         </div>
     </section>
-    <div class="slider_markalar pt-5 d-none">
+    <div class="slider_markalar pt-5">
       <div class="container my-5">
         <div class="swiper markalar_slider">
           <div class="swiper-wrapper">
@@ -358,23 +387,23 @@
         </div>   
       </div>
     </div>
-    <section class="footer pt-5 pb-4 mt-5 d-none">
-      <div class="container ">
+    <section class="footer pt-5 pb-4 mt-5">
+      <div class="container">
         <div class="row">
-          <div class="col-xl-3">
-            <div class="logo">
+          <div class="col-lg-3 mt-lg-0 mt-0 d-flex justify-content-lg-start justify-content-center">
+            <div class="logo" style="width: fit-content;">
               <a href="#">
                 <img src="assets/images/yonsis_white_logo.png" alt="">
               </a>
             </div>
           </div>
-          <div class="col-xl-6 d-flex justify-content-center">
+          <div class="col-lg-6 d-flex justify-content-center mt-lg-0 mt-4">
             <form action="">
               <input type="text" placeholder="Bültenimize E-posta Adresinizle Kayıt Olun" class="ebultennn" name="ebulten">
               <button type="submit">></button>
             </form>
           </div>
-          <div class="col-xl-3 socilaArea">
+          <div class="col-lg-3 socilaArea mt-lg-0 mt-4">
             <ul class="social_m">
               <li>
                 <a href="#">
@@ -408,7 +437,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-xl-2 menu_areas mt-5">
+          <div class="col-xl-2 menu_areas mt-5 text-center">
             <ul>
               <li><a href="#" title="Anasayfa">Anasayfa</a></li>
               <li><a href="#" title="Kurumsal">Kurumsal</a></li>
@@ -417,7 +446,7 @@
               <li><a href="#" title="İletişim">İletişim</a></li>
             </ul>
           </div>
-          <div class="col-xl-2 menu_areas mt-5">
+          <div class="col-xl-2 menu_areas mt-5 text-center">
             <ul>
               <li><a href="#" title="Yönsis Siber">Yönsis Siber</a></li>
               <li><a href="#" title="Adobe Yazılımları">Adobe Yazılımları</a></li>
@@ -426,7 +455,7 @@
               <li><a href="#" title="PC - Notebook">PC - Notebook</a></li>
             </ul>
           </div>
-          <div class="col-xl-2 menu_areas mt-5">
+          <div class="col-xl-2 menu_areas mt-5 text-center">
             <ul>
               <li><a href="#" title="Adobe">Adobe</a></li>
               <li><a href="#" title="Adantech">Adantech</a></li>
@@ -438,7 +467,7 @@
               <li><a href="#" title="Xerox">Xerox</a></li>
             </ul>
           </div>
-          <div class="col-xl-5 menu_areas mt-5">
+          <div class="col-xl-5 menu_areas mt-5 text-center">
             <ul>
               <li><b>Adres:</b><a href="#" title="Kozyatağı Mah. Değirmen Sok. Ar Plaza A Blok No: 16/12 Kadıköy - İstanbul">Kozyatağı Mah. Değirmen Sok. Ar Plaza A Blok No: 16/12 Kadıköy - İstanbul</a></li>
               <li><b>Telefon:</b><a href="#" title="+90 (216) 470 62 00">+90 (216) 470 62 00</a></li>
@@ -451,10 +480,10 @@
       </div>
       <div class="container mt-4">
         <div class="row">
-          <div class="col-xl-6">
+          <div class="col-xl-6 text-xl-start text-center">
             <div class="copirate">Copyright © 2024 YÖNSİS BİLGİSAYAR</div>
           </div>
-          <div class="col-xl-6 d-flex justify-content-end">
+          <div class="col-xl-6 d-flex text-xl-start text-center justify-content-xl-end justify-content-center mt-xl-0 mt-4">
             <img src="assets/images/webtasarim.png" width="128" height="29" alt="">
           </div>
         </div>
@@ -462,6 +491,7 @@
     </section>
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/plugins/swiper/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>
